@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+!.env.example
+backend/.env
+!backend/.env.example
+
+# Node
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.env
+*.local
+
+# Test / coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Local databases / dumps
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+
+# ML model weights / caches - never commit large binaries or downloads
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.safetensors
+.cache/
+.huggingface/
+torch_cache/
+
+# Alembic
+*.pyc
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dataset / media files - never commit user data
+data/images/*
+data/videos/*
+data/documents/*
+!data/images/.gitkeep
+!data/videos/.gitkeep
+!data/documents/.gitkeep
+
+# Postgres data
+pgdata/
